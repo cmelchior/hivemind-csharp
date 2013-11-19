@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E082582-AB39-4B56-8891-56B8448937EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HiveMindTest</RootNamespace>
+    <AssemblyName>HiveMind-Test</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\HexTests.cs" />
+    <Compile Include="Model\BoardTests.cs" />
+    <Compile Include="TestSetups.cs" />
+    <Compile Include="Model\RulesTests.cs" />
+    <Compile Include="Model\Bugs\BeetleTests.cs" />
+    <Compile Include="Model\Bugs\GrasshopperTests.cs" />
+    <Compile Include="Model\Bugs\LadyBugTests.cs" />
+    <Compile Include="Model\Bugs\MosquitoTests.cs" />
+    <Compile Include="Model\Bugs\PillBugTests.cs" />
+    <Compile Include="Model\Bugs\QueenBeeTests.cs" />
+    <Compile Include="Model\Bugs\SoldierAntTests.cs" />
+    <Compile Include="Model\Bugs\SpiderTests.cs" />
+    <Compile Include="AI\AdvancedMiniMaxAITests.cs" />
+    <Compile Include="AI\SimpleMiniMaxAITests.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Game\" />
+    <Folder Include="Model\" />
+    <Folder Include="Model\Bugs\" />
+    <Folder Include="AI\" />
+    <Folder Include="AI\Heuristics\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HiveMind.csproj">
+      <Project>{9AC40A93-A652-48DD-8948-0E8C89EE5F4A}</Project>
+      <Name>HiveMind</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

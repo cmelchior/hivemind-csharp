@@ -1,0 +1,5 @@
+/home/cme/Dropbox/Private projekter/Hive/HiveMind/csharp/AsciiHexPrinter/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/home/cme/Dropbox/Private projekter/Hive/HiveMind/csharp/AsciiHexPrinter/bin/Debug/AsciiHexPrinter.dll.mdb
+/home/cme/Dropbox/Private projekter/Hive/HiveMind/csharp/AsciiHexPrinter/bin/Debug/AsciiHexPrinter.dll
+/home/cme/Dropbox/Private projekter/Hive/HiveMind/csharp/AsciiHexPrinter/obj/Debug/AsciiHexPrinter.dll
+/home/cme/Dropbox/Private projekter/Hive/HiveMind/csharp/AsciiHexPrinter/obj/Debug/AsciiHexPrinter.dll.mdb

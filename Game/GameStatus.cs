@@ -1,0 +1,16 @@
+using System;
+
+namespace HiveMind
+{
+	public enum GameStatus
+	{
+		RESULT_NOT_STARTED,
+		RESULT_MATCH_IN_PROGRESS,
+		RESULT_TURN_LIMIT_REACHED,
+		RESULT_TIME_LIMIT_REACHED,
+		RESULT_DRAW,
+		RESULT_BLACK_WINS,
+		RESULT_WHITE_WINS
+	}
+}
+

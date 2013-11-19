@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9AC40A93-A652-48DD-8948-0E8C89EE5F4A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HiveMind</RootNamespace>
+    <AssemblyName>HiveMind</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="monodoc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Model\Hex.cs" />
+    <Compile Include="Model\Token.cs" />
+    <Compile Include="Model\Player.cs" />
+    <Compile Include="Model\Board.cs" />
+    <Compile Include="Model\BugType.cs" />
+    <Compile Include="Model\StandardPositionMode.cs" />
+    <Compile Include="Model\HexagonUtils.cs" />
+    <Compile Include="Model\Rules\Bug.cs" />
+    <Compile Include="Model\Rules\Beetle.cs" />
+    <Compile Include="Model\Rules\SoldierAnt.cs" />
+    <Compile Include="Model\Rules\LadyBug.cs" />
+    <Compile Include="Model\Rules\Mosquito.cs" />
+    <Compile Include="Model\Rules\QueenBee.cs" />
+    <Compile Include="Model\Rules\Spider.cs" />
+    <Compile Include="Model\Rules\Rules.cs" />
+    <Compile Include="Model\Rules\UnknownBug.cs" />
+    <Compile Include="Debug\HiveAsciiPrettyPrinter.cs" />
+    <Compile Include="RandomExtensions.cs" />
+    <Compile Include="Game\Game.cs" />
+    <Compile Include="Game\GameStatus.cs" />
+    <Compile Include="Game\GameCommand.cs" />
+    <Compile Include="AI\Statistics\GameStatistics.cs" />
+    <Compile Include="AI\Statistics\StopWatch.cs" />
+    <Compile Include="AI\Statistics\AIStatistics.cs" />
+    <Compile Include="DateTimeExtensions.cs" />
+    <Compile Include="Model\Rules\Grasshopper.cs" />
+    <Compile Include="Model\Rules\PillBug.cs" />
+    <Compile Include="AI\Controller\AIGameController.cs" />
+    <Compile Include="AI\Heuristics\BoardValueHeuristic.cs" />
+    <Compile Include="AI\Heuristics\SimpleHeuristic.cs" />
+    <Compile Include="AI\Moves\MoveGenerator.cs" />
+    <Compile Include="AI\Moves\StandardMoveGenerator.cs" />
+    <Compile Include="AI\TranspositionTable\TranspositionTable.cs" />
+    <Compile Include="AI\TranspositionTable\TranspositionTableEntry.cs" />
+    <Compile Include="Utils\LimitedBuffer.cs" />
+    <Compile Include="AI\HiveAI.cs" />
+    <Compile Include="AI\RandomAI.cs" />
+    <Compile Include="Utils\ThreadSafeList.cs" />
+    <Compile Include="AI\AbstractMiniMaxAI.cs" />
+    <Compile Include="AI\Moves\AggressiveMoveGenerator.cs" />
+    <Compile Include="AI\AdvancedMiniMaxAI.cs" />
+    <Compile Include="AI\SimpleMiniMaxAI.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Game\" />
+    <Folder Include="Model\" />
+    <Folder Include="Model\Rules\" />
+    <Folder Include="Debug\" />
+    <Folder Include="AI\" />
+    <Folder Include="AI\Statistics\" />
+    <Folder Include="AI\Controller\" />
+    <Folder Include="AI\Moves\" />
+    <Folder Include="AI\TranspositionTable\" />
+    <Folder Include="AI\Heuristics\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="AsciiHexPrinter\AsciiHexPrinter.csproj">
+      <Project>{64E951EF-B48E-4860-9FBE-86BAAABF36CB}</Project>
+      <Name>AsciiHexPrinter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+/home/cme/Dropbox/Private projekter/Hive/HiveMind/csharp/HiveMind-Test/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/home/cme/Dropbox/Private projekter/Hive/HiveMind/csharp/HiveMind-Test/bin/Debug/HiveMind-Test.dll.mdb
+/home/cme/Dropbox/Private projekter/Hive/HiveMind/csharp/HiveMind-Test/bin/Debug/HiveMind-Test.dll
+/home/cme/Dropbox/Private projekter/Hive/HiveMind/csharp/HiveMind-Test/obj/Debug/HiveMind-Test.dll
+/home/cme/Dropbox/Private projekter/Hive/HiveMind/csharp/HiveMind-Test/obj/Debug/HiveMind-Test.dll.mdb
+/home/cme/Dropbox/Private projekter/Hive/HiveMind/csharp/HiveMind-Test/bin/Debug/csharp.dll
+/home/cme/Dropbox/Private projekter/Hive/HiveMind/csharp/HiveMind-Test/bin/Debug/csharp.dll.mdb
